@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/humble/include/**",
+                "/opt/ros/humble/include/rclcpp",
+                "/opt/ros/humble/include/rcl",
+                "/opt/ros/humble/include/rcutils",
+                "/opt/ros/humble/include/rmw",
+                "/opt/ros/humble/include/rcl_yaml_param_parser",
+                "/opt/ros/humble/include/rosidl_runtime_c",
+                "/opt/ros/humble/include/rosidl_typesupport_interface",
+                "/opt/ros/humble/include/cv_bridge",
+                "/opt/ros/humble/include/geometry_msgs",
+                "/usr/include/opencv4", 
+                "/home/sora/Desktop/sora_ws/install/interface_example/include/**",
+                "/home/sora/Desktop/sora_ws/build/interface_example/rosidl_generator_cpp"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
