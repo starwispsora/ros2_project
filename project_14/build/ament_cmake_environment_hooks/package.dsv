@@ -1,4 +1,4 @@
-source;share/project_14/local_setup.bash
-source;share/project_14/local_setup.dsv
-source;share/project_14/local_setup.sh
-source;share/project_14/local_setup.zsh
+source;share/PROJECT_14/local_setup.bash
+source;share/PROJECT_14/local_setup.dsv
+source;share/PROJECT_14/local_setup.sh
+source;share/PROJECT_14/local_setup.zsh

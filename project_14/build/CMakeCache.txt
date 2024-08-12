@@ -167,7 +167,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=project_14
+CMAKE_PROJECT_NAME:STATIC=PROJECT_14
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -264,6 +264,15 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
+//Value Computed by CMake
+PROJECT_14_BINARY_DIR:STATIC=/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build
+
+//Value Computed by CMake
+PROJECT_14_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+PROJECT_14_SOURCE_DIR:STATIC=/home/sora/Desktop/sora_ws/src/ros2_project/project_14
+
 //Path to a program.
 Python3_EXECUTABLE:FILEPATH=/usr/bin/python3
 
@@ -332,6 +341,15 @@ builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
 
 //The directory containing a CMake configuration file for cv_bridge.
 cv_bridge_DIR:PATH=/opt/ros/humble/share/cv_bridge/cmake
+
+//Value Computed by CMake
+distributor_BINARY_DIR:STATIC=/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build
+
+//Value Computed by CMake
+distributor_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+distributor_SOURCE_DIR:STATIC=/home/sora/Desktop/sora_ws/src/ros2_project/project_14
 
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr

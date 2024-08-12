@@ -185,30 +185,17 @@ uninstall/fast:
 .PHONY : uninstall/fast
 
 #=============================================================================
-# Target rules for targets named project_14_uninstall
+# Target rules for targets named PROJECT_14_uninstall
 
 # Build rule for target.
-project_14_uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_14_uninstall
-.PHONY : project_14_uninstall
+PROJECT_14_uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PROJECT_14_uninstall
+.PHONY : PROJECT_14_uninstall
 
 # fast build rule for target.
-project_14_uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_14_uninstall.dir/build.make CMakeFiles/project_14_uninstall.dir/build
-.PHONY : project_14_uninstall/fast
-
-#=============================================================================
-# Target rules for targets named camera_setup
-
-# Build rule for target.
-camera_setup: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 camera_setup
-.PHONY : camera_setup
-
-# fast build rule for target.
-camera_setup/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_setup.dir/build.make CMakeFiles/camera_setup.dir/build
-.PHONY : camera_setup/fast
+PROJECT_14_uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROJECT_14_uninstall.dir/build.make CMakeFiles/PROJECT_14_uninstall.dir/build
+.PHONY : PROJECT_14_uninstall/fast
 
 #=============================================================================
 # Target rules for targets named line_follower
@@ -222,30 +209,6 @@ line_follower: cmake_check_build_system
 line_follower/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_follower.dir/build.make CMakeFiles/line_follower.dir/build
 .PHONY : line_follower/fast
-
-src/camera_setup.o: src/camera_setup.cpp.o
-.PHONY : src/camera_setup.o
-
-# target to build an object file
-src/camera_setup.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_setup.dir/build.make CMakeFiles/camera_setup.dir/src/camera_setup.cpp.o
-.PHONY : src/camera_setup.cpp.o
-
-src/camera_setup.i: src/camera_setup.cpp.i
-.PHONY : src/camera_setup.i
-
-# target to preprocess a source file
-src/camera_setup.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_setup.dir/build.make CMakeFiles/camera_setup.dir/src/camera_setup.cpp.i
-.PHONY : src/camera_setup.cpp.i
-
-src/camera_setup.s: src/camera_setup.cpp.s
-.PHONY : src/camera_setup.s
-
-# target to generate assembly for a file
-src/camera_setup.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_setup.dir/build.make CMakeFiles/camera_setup.dir/src/camera_setup.cpp.s
-.PHONY : src/camera_setup.cpp.s
 
 src/line_follower.o: src/line_follower.cpp.o
 .PHONY : src/line_follower.o
@@ -284,13 +247,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... project_14_uninstall"
+	@echo "... PROJECT_14_uninstall"
 	@echo "... uninstall"
-	@echo "... camera_setup"
 	@echo "... line_follower"
-	@echo "... src/camera_setup.o"
-	@echo "... src/camera_setup.i"
-	@echo "... src/camera_setup.s"
 	@echo "... src/line_follower.o"
 	@echo "... src/line_follower.i"
 	@echo "... src/line_follower.s"

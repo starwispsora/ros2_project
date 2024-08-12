@@ -63,7 +63,6 @@ CMAKE_BINARY_DIR = /home/sora/Desktop/sora_ws/src/ros2_project/project_14/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/camera_setup.dir/all
 all: CMakeFiles/line_follower.dir/all
 .PHONY : all
 
@@ -73,8 +72,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
-clean: CMakeFiles/project_14_uninstall.dir/clean
-clean: CMakeFiles/camera_setup.dir/clean
+clean: CMakeFiles/PROJECT_14_uninstall.dir/clean
 clean: CMakeFiles/line_follower.dir/clean
 .PHONY : clean
 
@@ -82,7 +80,7 @@ clean: CMakeFiles/line_follower.dir/clean
 # Target rules for target CMakeFiles/uninstall.dir
 
 # All Build rule for target.
-CMakeFiles/uninstall.dir/all: CMakeFiles/project_14_uninstall.dir/all
+CMakeFiles/uninstall.dir/all: CMakeFiles/PROJECT_14_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles --progress-num= "Built target uninstall"
@@ -105,56 +103,30 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/project_14_uninstall.dir
+# Target rules for target CMakeFiles/PROJECT_14_uninstall.dir
 
 # All Build rule for target.
-CMakeFiles/project_14_uninstall.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_14_uninstall.dir/build.make CMakeFiles/project_14_uninstall.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_14_uninstall.dir/build.make CMakeFiles/project_14_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles --progress-num= "Built target project_14_uninstall"
-.PHONY : CMakeFiles/project_14_uninstall.dir/all
+CMakeFiles/PROJECT_14_uninstall.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROJECT_14_uninstall.dir/build.make CMakeFiles/PROJECT_14_uninstall.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROJECT_14_uninstall.dir/build.make CMakeFiles/PROJECT_14_uninstall.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles --progress-num= "Built target PROJECT_14_uninstall"
+.PHONY : CMakeFiles/PROJECT_14_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/project_14_uninstall.dir/rule: cmake_check_build_system
+CMakeFiles/PROJECT_14_uninstall.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/project_14_uninstall.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PROJECT_14_uninstall.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles 0
-.PHONY : CMakeFiles/project_14_uninstall.dir/rule
+.PHONY : CMakeFiles/PROJECT_14_uninstall.dir/rule
 
 # Convenience name for target.
-project_14_uninstall: CMakeFiles/project_14_uninstall.dir/rule
-.PHONY : project_14_uninstall
+PROJECT_14_uninstall: CMakeFiles/PROJECT_14_uninstall.dir/rule
+.PHONY : PROJECT_14_uninstall
 
 # clean rule for target.
-CMakeFiles/project_14_uninstall.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_14_uninstall.dir/build.make CMakeFiles/project_14_uninstall.dir/clean
-.PHONY : CMakeFiles/project_14_uninstall.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/camera_setup.dir
-
-# All Build rule for target.
-CMakeFiles/camera_setup.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_setup.dir/build.make CMakeFiles/camera_setup.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_setup.dir/build.make CMakeFiles/camera_setup.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles --progress-num=1,2 "Built target camera_setup"
-.PHONY : CMakeFiles/camera_setup.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/camera_setup.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/camera_setup.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles 0
-.PHONY : CMakeFiles/camera_setup.dir/rule
-
-# Convenience name for target.
-camera_setup: CMakeFiles/camera_setup.dir/rule
-.PHONY : camera_setup
-
-# clean rule for target.
-CMakeFiles/camera_setup.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_setup.dir/build.make CMakeFiles/camera_setup.dir/clean
-.PHONY : CMakeFiles/camera_setup.dir/clean
+CMakeFiles/PROJECT_14_uninstall.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PROJECT_14_uninstall.dir/build.make CMakeFiles/PROJECT_14_uninstall.dir/clean
+.PHONY : CMakeFiles/PROJECT_14_uninstall.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/line_follower.dir
@@ -163,7 +135,7 @@ CMakeFiles/camera_setup.dir/clean:
 CMakeFiles/line_follower.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_follower.dir/build.make CMakeFiles/line_follower.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/line_follower.dir/build.make CMakeFiles/line_follower.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles --progress-num=3,4 "Built target line_follower"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles --progress-num=1,2 "Built target line_follower"
 .PHONY : CMakeFiles/line_follower.dir/all
 
 # Build rule for subdir invocation for target.

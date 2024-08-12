@@ -1,6 +1,5 @@
 /home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles/uninstall.dir
-/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles/project_14_uninstall.dir
-/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles/camera_setup.dir
+/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles/PROJECT_14_uninstall.dir
 /home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles/line_follower.dir
 /home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles/test.dir
 /home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/CMakeFiles/edit_cache.dir

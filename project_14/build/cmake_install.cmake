@@ -43,106 +43,82 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/camera_setup" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/camera_setup")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/PROJECT_14/line_follower" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/PROJECT_14/line_follower")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/camera_setup"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/PROJECT_14/line_follower"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/project_14" TYPE EXECUTABLE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/camera_setup")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/camera_setup" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/camera_setup")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/PROJECT_14" TYPE EXECUTABLE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/line_follower")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/PROJECT_14/line_follower" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/PROJECT_14/line_follower")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/camera_setup"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/PROJECT_14/line_follower"
          OLD_RPATH "/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/camera_setup")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/PROJECT_14/line_follower")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/line_follower" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/line_follower")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/line_follower"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/project_14" TYPE EXECUTABLE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/line_follower")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/line_follower" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/line_follower")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/line_follower"
-         OLD_RPATH "/opt/ros/humble/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/project_14/line_follower")
-    endif()
-  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/PROJECT_14")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14/" TYPE DIRECTORY FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/PROJECT_14")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/project_14")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/project_14")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14/environment" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14/environment" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14/environment" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14/environment" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_index/share/ament_index/resource_index/packages/PROJECT_14")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_environment_hooks/package.dsv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_index/share/ament_index/resource_index/packages/project_14")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14/cmake" TYPE FILE FILES
-    "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_core/project_14Config.cmake"
-    "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_core/project_14Config-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14/cmake" TYPE FILE FILES
+    "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_core/PROJECT_14Config.cmake"
+    "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/build/ament_cmake_core/PROJECT_14Config-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/project_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/PROJECT_14" TYPE FILE FILES "/home/sora/Desktop/sora_ws/src/ros2_project/project_14/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

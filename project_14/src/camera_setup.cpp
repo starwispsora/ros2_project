@@ -3,6 +3,9 @@
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/opencv.hpp>
 #include <opencv2/imgcodecs.hpp>
+#include <chrono>
+
+using namespace std::chrono_literals;
 
 class CameraSetupNode : public rclcpp::Node
 {
@@ -11,7 +14,7 @@ public:
     {
         image_pub_ = this->create_publisher<sensor_msgs::msg::Image>("camera/image_compressed", 10);
         timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(100), std::bind(&CameraSetupNode::capture_and_publish, this));
+            100ms, std::bind(&CameraSetupNode::capture_and_publish, this));
     }
 
 private:

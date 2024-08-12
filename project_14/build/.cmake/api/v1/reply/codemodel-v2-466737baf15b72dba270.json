@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-a8d4d8fd07cd0642c9a7.json",
+					"jsonFile" : "directory-.-Debug-05d591cd7582bd5d367e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -18,8 +18,7 @@
 					[
 						0,
 						1,
-						2,
-						3
+						2
 					]
 				}
 			],
@@ -31,13 +30,12 @@
 					[
 						0
 					],
-					"name" : "project_14",
+					"name" : "PROJECT_14",
 					"targetIndexes" : 
 					[
 						0,
 						1,
-						2,
-						3
+						2
 					]
 				}
 			],
@@ -45,29 +43,22 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "camera_setup::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-camera_setup-Debug-50923903eeb34ca41b7f.json",
-					"name" : "camera_setup",
+					"id" : "PROJECT_14_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PROJECT_14_uninstall-Debug-0309fe21dc5465b3b0ad.json",
+					"name" : "PROJECT_14_uninstall",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "line_follower::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-line_follower-Debug-2a22c7af1140ac743a8f.json",
+					"jsonFile" : "target-line_follower-Debug-65948c05f62d7108a4cd.json",
 					"name" : "line_follower",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "project_14_uninstall::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-project_14_uninstall-Debug-b1f67971299bbb114458.json",
-					"name" : "project_14_uninstall",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "uninstall::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-uninstall-Debug-4dcac72cd4afff9f6483.json",
+					"jsonFile" : "target-uninstall-Debug-945b08b7e209b7128978.json",
 					"name" : "uninstall",
 					"projectIndex" : 0
 				}
