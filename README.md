@@ -30,7 +30,7 @@ AM
  - launch/hls_laser.launch.py
  - launch/my_tb3_bringup.launch.py
 
-#### made 2nd bot param
+#### made 2nd bot param(tb3_1)
  - burger.yaml
 
 PM
