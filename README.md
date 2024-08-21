@@ -12,9 +12,12 @@ AM
 
 PM
 ##### build, run
-enter : ssh ubuntu@192.168.14.20
-build : 
-run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/tb3_0
+enter : ssh ubuntu@192.168.14.14
+build : cd robot_ws/
+cbp my_tb3_launcher
+run : 
+in turtle run : ros2 launch my_tb3_launcher my_tb3_bringup.launch.py
+in laptop run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/tb3_0
 
 <br>
 <br>
@@ -23,7 +26,7 @@ run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/tb3_0
 <br>
 
 AM
-#### made 2nd bot launchers(tb_1)
+#### made 2nd bot launchers(tb3_1)
  - launch/hls_laser.launch.py
  - launch/my_tb3_bringup.launch.py
 
@@ -31,8 +34,11 @@ AM
  - burger.yaml
 
 PM
-##### build, run(tb_1)
-enter : ssh ubuntu@192.168.14.14
-build :
-run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/tb3_0
+##### build, run(tb3_1)
+enter : ssh ubuntu@192.168.14.13
+build : cd robot_ws/
+cbp my_tb3_launcher
+run : 
+in turtle run : ros2 launch my_tb3_launcher my_tb3_bringup.launch.py
+in laptop run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/tb3_1
 
