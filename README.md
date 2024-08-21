@@ -2,7 +2,7 @@
 <br>
 <br>
 
-AM
+AM Sora
 ##### made 1st bot launchers(tb3_0)
  - launch/hls_laser.launch.py
  - launch/my_tb3_bringup.launch.py
@@ -10,7 +10,7 @@ AM
 ##### made 1st bot param(tb3_0)
  - burger.yaml
 
-PM
+PM Suengyeon
 ##### build, run
 enter : ssh ubuntu@192.168.14.14
 build : cd robot_ws/
@@ -25,7 +25,7 @@ in laptop run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/
 <br>
 <br>
 
-AM
+AM Sora
 #### made 2nd bot launchers(tb3_1)
  - launch/hls_laser.launch.py
  - launch/my_tb3_bringup.launch.py
