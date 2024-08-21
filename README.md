@@ -44,4 +44,4 @@ in laptop run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/
 PM
 Suengyoen
  - build 2 cpp files and integrate them into one node
- - write camera recognition code
+ - additionally, write and add opencv camera line coloer recognition code and quantization(=the process of mapping continuous infinite values to a smaller set of discrete finite values) 
