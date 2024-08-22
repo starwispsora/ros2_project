@@ -108,7 +108,7 @@ private:
 int main(int argc, char *argv[])
 {
     rclcpp::init(argc, argv);
-    auto robot = std::make_shared<LineFollowingRobot>();  // 로v봇 노드 객체 생성
+    auto robot = std::make_shared<LineFollowingRobot>();  // 로봇 노드 객체 생성
     rclcpp::spin(robot);  // 노드 실행
     rclcpp::shutdown();   // 종료
     return 0;
