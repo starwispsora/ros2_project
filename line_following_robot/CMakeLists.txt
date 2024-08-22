@@ -10,6 +10,7 @@ find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 # Include directories
 include_directories(
@@ -18,7 +19,7 @@ include_directories(
 
 # Add executable
 add_executable(line_following_robot src/line_following.cpp)
-ament_target_dependencies(line_following_robot rclcpp sensor_msgs geometry_msgs cv_bridge OpenCV std_msgs rclcpp_action)
+ament_target_dependencies(line_following_robot rclcpp sensor_msgs geometry_msgs cv_bridge OpenCV std_msgs rclcpp_action nav_msgs)
 
 target_link_libraries(line_following_robot
   ${OpenCV_LIBRARIES}

@@ -4,6 +4,7 @@
 #include <opencv2/opencv.hpp>
 #include <geometry_msgs/msg/twist.hpp>
 #include "sensor_msgs/msg/compressed_image.hpp"
+#include "turtlesim/msg/pose.hpp"
 
 class LineFollowingRobot : public rclcpp::Node
 {
@@ -14,27 +15,29 @@ public:
 
         // 카메라 1과 2를 위한 이미지 구독 설정
         cam1_sub_ = create_subscription<sensor_msgs::msg::CompressedImage>(
-            "tb3_0/image_raw/compressed", qos_profile, 
+            "tb3_0/image_raw/compressed", qos_profile,
             std::bind(&LineFollowingRobot::sub_img1, this, std::placeholders::_1));
 
         cam2_sub_ = create_subscription<sensor_msgs::msg::CompressedImage>(
-            "tb3_1/image_raw/compressed", qos_profile, 
+            "tb3_1/image_raw/compressed", qos_profile,
             std::bind(&LineFollowingRobot::sub_img2, this, std::placeholders::_1));
 
         // 두 로봇에 대한 속도 출판 설정
         cmd_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/tb3_0/cmd_vel", 10);
-        cmd_pub1_ = this->create_publisher<geometry_msgs::msg::Twist>("/tb3_1/cmd_vel", 10);
+        cmd_pub1_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
 
+        _sub = this->create_subscription<turtlesim::msg::Pose>("/turtle1/pose", qos_profile, std::bind(&LineFollowingRobot::sub_turtlesim_pose, this, std::placeholders::_1));
         // V4L2 카메라 실행 명령 설정
         // system("v4l2-ctl --set-fmt-video=width=640,height=480,pixelformat=1 --stream-mmap --stream-count=60 --stream-to=/dev/null");
 
         // 타이머 설정 (60프레임/초)
         timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(16), 
+            std::chrono::milliseconds(16),
             std::bind(&LineFollowingRobot::update, this));
     }
 
 private:
+    int _i;
     geometry_msgs::msg::Twist cmd_msg_0;
     geometry_msgs::msg::Twist cmd_msg_1;
     rclcpp::Subscription<sensor_msgs::msg::CompressedImage>::SharedPtr cam1_sub_;
@@ -42,6 +45,12 @@ private:
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_pub_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_pub1_;
     rclcpp::TimerBase::SharedPtr timer_;
+
+    turtlesim::msg::Pose _pose_msg;
+
+    rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr _sub;
+
+    void sub_turtlesim_pose(const turtlesim::msg::Pose::SharedPtr msg);
 
     cv::Mat img1_, img2_;
 
@@ -75,12 +84,87 @@ private:
         cmd_msg_0.linear.x = 0.1;
         cmd_msg_0.angular.z = 1.0;
 
-        cmd_msg_1.linear.x = 0.05;
-        cmd_msg_1.angular.z = 1.0;
-        
+        // cmd_msg_1.linear.x = 0.05;
+        // cmd_msg_1.angular.z = 1.0;
+        //  사각형으로 움직이기.
+        switch (_i)
+        {
+        case 0:
+            if (_pose_msg.x < 6.5)
+            {
+                // 직진
+                cmd_msg_1.linear.x = 0.1;
+                cmd_msg_1.angular.z = 0.0;
+            }
+            else if (_pose_msg.theta < 1.57)
+            {
+                // 회전
+                cmd_msg_1.linear.x = 0.0;
+                cmd_msg_1.angular.z = 1.8;
+            }
+            else
+            {
+                _i++;
+            }
+            break;
+        case 1:
+            if (_pose_msg.y < 6.5)
+            {
+                // 직진
+                cmd_msg_1.linear.x = 0.1;
+                cmd_msg_1.angular.z = 0.0;
+            }
+            else if (_pose_msg.theta < 3.14 && _pose_msg.theta > 0)
+            {
+                // 회전
+                cmd_msg_1.linear.x = 0.0;
+                cmd_msg_1.angular.z = 1.8;
+            }
+            else
+            {
+                _i++;
+            }
+            break;
+        case 2:
+            if (_pose_msg.x > 5.5)
+            {
+                // 직진
+                cmd_msg_1.linear.x = 0.1;
+                cmd_msg_1.angular.z = 0.0;
+            }
+            else if (_pose_msg.theta < -1.57)
+            {
+                // 회전
+                cmd_msg_1.linear.x = 0.0;
+                cmd_msg_1.angular.z = 1.8;
+            }
+            else
+            {
+                _i++;
+            }
+            break;
+        case 3:
+            if (_pose_msg.y > 5.5)
+            {
+                // 직진
+                cmd_msg_1.linear.x = 0.1;
+                cmd_msg_1.angular.z = 0.0;
+            }
+            else if (_pose_msg.theta < 0)
+            {
+                // 회전
+                cmd_msg_1.linear.x = 0.0;
+                cmd_msg_1.angular.z = 1.8;
+            }
+            else
+            {
+                _i = 0;
+            }
+            break;
+        }
+
         cmd_pub_->publish(cmd_msg_0);
         cmd_pub1_->publish(cmd_msg_1);
-
     }
 
     // void process_image(cv::Mat& img, geometry_msgs::msg::Twist &cmd_msg)
@@ -106,7 +190,7 @@ private:
     //     // 윤곽선 검출
     //     std::vector<std::vector<cv::Point>> contours;
     //     cv::findContours(roi, contours, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE);
-        
+
     //     if (!contours.empty())
     //     {
     //         // 가장 큰 윤곽선 찾기
@@ -143,16 +227,19 @@ private:
         // 첫 번째 로봇에 대한 명령 설정
         cmd_msg_0.linear.x = linear_speed;
         cmd_msg_0.angular.z = angular_speed;
-
     }
 
+    void sub_turtlesim_pose(const turtlesim::msg::Pose::SharedPtr msg)
+    {
+        _pose_msg = *msg;
+    }
 };
 
 int main(int argc, char *argv[])
 {
     rclcpp::init(argc, argv);
-    auto robot = std::make_shared<LineFollowingRobot>();  // 로봇 노드 객체 생성
-    rclcpp::spin(robot);  // 노드 실행
-    rclcpp::shutdown();   // 종료
+    auto robot = std::make_shared<LineFollowingRobot>(); // 로봇 노드 객체 생성
+    rclcpp::spin(robot);                                 // 노드 실행
+    rclcpp::shutdown();                                  // 종료
     return 0;
 }
