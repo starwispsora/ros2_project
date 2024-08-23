@@ -20,6 +20,7 @@ in turtle run : ros2 launch my_tb3_launcher my_tb3_bringup.launch.py
 in laptop run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/tb3_0
 <br>
 <br>
+***
 21Aug
 <br>
 <br>
@@ -42,7 +43,7 @@ in laptop run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/
 PM Seungyoen
  - build 2 cpp files and integrate them into one node
  - additionally, write and add opencv camera line coloer recognition code and quantization(=the process of mapping continuous infinite values to a smaller set of discrete finite values)
-
+***
 22Aug <br>
 
 AM Sora
@@ -57,7 +58,7 @@ PM Seungyeon
  - Successfully built the integrated node that combines the functionality of the two CPP files.
  - Tested and confirmed the integration of the OpenCV-based camera line color recognition and quantization code.
  - Completed the full system build and verified the operation of both TurtleBots with their respective nodes.
-
+***
 23Aug <br>
 
 AM Sora & Seungyeon
