@@ -1,4 +1,7 @@
 ***
+Project PPT(Korean) : https://docs.google.com/presentation/d/1ZqtcRpdbZTo8quWRLtGf3FaFsqSgyMQdPg0ZLWDysmE/edit#slide=id.g742e3e7cd_0_0
+
+
 20Aug
 <br>
 <br>
