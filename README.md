@@ -43,7 +43,8 @@ PM Seungyoen
  - build 2 cpp files and integrate them into one node
  - additionally, write and add opencv camera line coloer recognition code and quantization(=the process of mapping continuous infinite values to a smaller set of discrete finite values)
 
-22Aug
+22Aug <br>
+
 AM Sora
  - Completed the build and configuration for both TurtleBots (tb3_0 and tb3_1).
  - Finalized the launch files for both bots: <br>
@@ -57,7 +58,8 @@ PM Seungyeon
  - Tested and confirmed the integration of the OpenCV-based camera line color recognition and quantization code.
  - Completed the full system build and verified the operation of both TurtleBots with their respective nodes.
 
-23Aug
+23Aug <br>
+
 AM Sora & Seungyeon
  - Collaboratively wrote the project presentation and final report.
  - Documented the entire development process and outlined the key functionalities implemented in the TurtleBot project.
