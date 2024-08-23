@@ -1,3 +1,4 @@
+***
 20Aug
 <br>
 <br>
@@ -69,3 +70,5 @@ AM Sora & Seungyeon
  - Collaboratively wrote the project presentation and final report.
  - Documented the entire development process and outlined the key functionalities implemented in the TurtleBot project.
  - Prepared and finalized the slides for the upcoming presentation.
+
+***
