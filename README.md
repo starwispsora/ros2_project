@@ -39,8 +39,7 @@ run :
 in turtle run : ros2 launch my_tb3_launcher my_tb3_bringup.launch.py
 in laptop run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/tb3_1
 
-PM
-Seungyoen
+PM Seungyoen
  - build 2 cpp files and integrate them into one node
  - additionally, write and add opencv camera line coloer recognition code and quantization(=the process of mapping continuous infinite values to a smaller set of discrete finite values)
 
