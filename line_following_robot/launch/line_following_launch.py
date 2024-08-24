@@ -11,7 +11,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
     robot_namespace = LaunchConfiguration('robot_namespace', default='tb3_0')
 
-    # Gazebo launch file for TurtleBot3
+    # launch file for TurtleBot3
     turtlebot3_gazebo_dir = get_package_share_directory('turtlebot3_gazebo')
     gazebo_launch_file = os.path.join(turtlebot3_gazebo_dir, 'launch', 'turtlebot3_world.launch.py')
 
