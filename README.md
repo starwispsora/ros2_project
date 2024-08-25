@@ -37,7 +37,7 @@ AM Sora
  - burger.yaml
 
 ##### build, run(tb3_1)
-enter : ssh ubuntu@192.168.14.13
+enter : ssh ubuntu@192.168.14.13 <br>
 build : cd robot_ws/
 cbp my_tb3_launcher
 run : 
