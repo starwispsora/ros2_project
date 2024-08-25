@@ -16,11 +16,11 @@ AM Sora
 
 PM Seungyeon
 ##### build, run
-enter : ssh ubuntu@192.168.14.14
-build : cd robot_ws/
-cbp my_tb3_launcher
+enter : ssh ubuntu@192.168.14.14 <br>
+build : cd robot_ws/ <br>
+cbp my_tb3_launcher <br>
 run : 
-in turtle run : ros2 launch my_tb3_launcher my_tb3_bringup.launch.py
+in turtle run : ros2 launch my_tb3_launcher my_tb3_bringup.launch.py <br>
 in laptop run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/tb3_0
 <br>
 <br>
@@ -38,10 +38,10 @@ AM Sora
 
 ##### build, run(tb3_1)
 enter : ssh ubuntu@192.168.14.13 <br>
-build : cd robot_ws/
-cbp my_tb3_launcher
+build : cd robot_ws/ <br>
+cbp my_tb3_launcher <br>
 run : 
-in turtle run : ros2 launch my_tb3_launcher my_tb3_bringup.launch.py
+in turtle run : ros2 launch my_tb3_launcher my_tb3_bringup.launch.py <br>
 in laptop run : ros2 run turtlebot3_teleop teleop_keyboard --ros-args -r __ns:=/tb3_1
 
 PM Seungyoen
